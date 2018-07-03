@@ -10,11 +10,13 @@ def index():
 @app.route('/test', methods=['GET', 'POST'])
 def test():
     if request.method == 'GET':
-        res = request.args.get('get_value')
+        res = 'get_value.html'
     elif request.method == 'POST':
-        res = request.form['post_value']
+        res = 'post_value.html'
 
-    return res
+    print(res)
+    return render_template(res)
+#    return res
 
 if __name__ == '__main__':
     app.run()
