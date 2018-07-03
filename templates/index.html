@@ -4,24 +4,15 @@
   <head>
   </head>
   <body>
-    <p>{{ s }}</p>
-    <hr>
 
-    <ul>
-    {% for x in lis %}
-      <li>{{ x }}</li>
-    {% endfor %}
-    </ul>
-    <hr>
+    <form action="/test" method="get">
+      <button name="get_value" value="from get">get submit</button>
+    </form>
 
-    <p>{{ "name: %s age: %s" % (dic["name"], dic["age"]) }}</p>
-    <hr>
+    <form action="/test" method="post">
+      <button name="post_value" value="from post">post submit</button>
+    </form>
 
-    {% if bl %}
-      <p>True</p>
-    {% else %}
-      <p>False</p>
-    {% endif %}
   </body>
 </html>
 
