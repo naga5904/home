@@ -1,10 +1,14 @@
 from flask import Flask,render_template,request
+from socket import gethostname
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    host = '%s' % gethostname()
+    print('hostname = %s',host)
+
+    return render_template('index.html',host=host)
 
 
 @app.route('/test', methods=['GET', 'POST'])
