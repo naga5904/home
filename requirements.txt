@@ -1,3 +1,5 @@
+--upgrade
 pip
 --find-links wheelhouse
+--no-index
 pyodbc==4.0.23
