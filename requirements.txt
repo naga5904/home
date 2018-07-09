@@ -1,4 +1,4 @@
 --no-index
---find-links wheelhouse/
+--find-links \home\site\wwwroot\wheelhouse
 pyodbc==4.0.23
 
