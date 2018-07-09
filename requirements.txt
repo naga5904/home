@@ -1,4 +1,2 @@
---no-index
---find-links \home\site\wwwroot\wheelhouse
-#pyodbc==4.0.23
-./wheelhouse/pyodbc-4.0.23-cp27-cp27m-win_amd64.whl
+Flask
+pyodbc==4.0.2
