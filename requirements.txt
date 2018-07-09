@@ -1,2 +1,4 @@
 Flask
+--no-index
+--find-links wheelhouse
 pyodbc==4.0.2
