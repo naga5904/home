@@ -1,4 +1,1 @@
 Flask
---no-index
---find-links wheelhouse
-pyodbc
